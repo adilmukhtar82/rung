@@ -6,7 +6,7 @@ class PyMongoDB:
     # constructing db information
     def __init__(self) :
         self.uri = "mongodb+srv://adil:thisisrung_1234@cluster0.cwrzerp.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp"
-        self.client = MongoClient("mongodb+srv://adil:thisisrung_1234@cluster0.cwrzerp.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp")
+        self.client = MongoClient("mongodb+srv://<username>:<pwd>@cluster0.cwrzerp.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp")
         self.db = self.client["rung"]
         self.collection_games = self.db["games"]
         self.collection_players = self.db["players"]
